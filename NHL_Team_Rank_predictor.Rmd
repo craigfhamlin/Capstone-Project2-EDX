@@ -472,7 +472,7 @@ besttune <- train_rpart2$bestTune
 grid <- accuracy(train_rpart2, 'Rpart Model', trains2, tests2, ptm[[3]])
 grid %>% 
   select(Predictor,"Accuracy (train)" = Accuracy..train., "Accuracy (test)" = Accuracy..test.,"Time (secs)" = Time.secs.) %>%
-  kable(booktabs = T) # is booktabs necessary?
+  kable(booktabs = T) 
 
 ```
 
